@@ -1,0 +1,4 @@
+<h2>rounds-list</h2> <button (click)="createNewRound()">Add Round</button>
+<ng-container *ngFor="let round of list" >
+  <app-round-detail [round]="round" ></app-round-detail>
+</ng-container>

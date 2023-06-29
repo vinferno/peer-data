@@ -1,0 +1,23 @@
+<h2>dev-list</h2>
+<button (click)="fillRows()">Fill</button>
+<button (click)="rotateDevs()">Rotate</button>
+<button (click)="snapShotPairs()">Snapshot Pairs</button>
+<button (click)="automate()">Autmate Round</button>
+<hr>
+<div>
+  <ng-container *ngFor="let dev of topRow">
+    <app-dev-detail [dev]="dev" >
+
+    </app-dev-detail>
+  </ng-container>
+</div>
+
+<div>
+  <ng-container *ngFor="let dev of bottomRow">
+    <app-dev-detail [dev]="dev" >
+
+    </app-dev-detail>
+  </ng-container>
+</div>
+
+
